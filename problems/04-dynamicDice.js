@@ -30,8 +30,20 @@ newDice3(2); // 24
 ***********************************************************************/
 
 const dynamicDice = sides => {
-  // Your code here 
+  return function(num) {
+    num = sides * num
+    return(num) 
+  }
 }
+
+const newDice = dynamicDice(20); // returns a function
+newDice(5); // 100
+
+const newDice2 = dynamicDice(10); // returns a function
+newDice2(5); // 50
+
+const newDice3 = dynamicDice(12); // returns a function
+newDice3(2); // 24
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try{
