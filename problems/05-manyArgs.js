@@ -21,9 +21,16 @@ manyArgs(1, 2, 5, 6) // 60
 ***********************************************************************/
 
 const manyArgs = (...args) => {
-    // Your code here 
+    let product = 1
+    for(let key of args){
+        product = product * key
+    }
+    return (product)
 }
 
+manyArgs(1, 2, 3, 4, 5, 6, 7) // 5040
+manyArgs(1, 2, 5, 6, 7) // 420
+manyArgs(1, 2, 5, 6) // 60
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try{
     module.exports = manyArgs;
