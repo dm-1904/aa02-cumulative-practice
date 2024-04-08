@@ -19,7 +19,8 @@ str2 = 'Tom B: no Spiderman, Justin N: no Spiderman, Emily B: wrote about Spider
 ***********************************************************************/
 
 const spiderManWriters = (str) => {
-    // Your code here 
+    let obj = {}
+    
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
